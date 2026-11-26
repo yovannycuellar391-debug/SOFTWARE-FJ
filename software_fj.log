@@ -1,0 +1,33 @@
+2026-11-25 15:12:00,347 | INFO | Cliente registrado: Cliente [C-01] Laura Gómez | laura@empresa.com | Tel: 3105551234
+2026-11-25 15:12:00,348 | INFO | Op 1 exitosa -> C-01 registrada
+2026-11-25 15:12:00,348 | ERROR | Op 2 fallida (ErrorValidacionDato): Correo electrónico inválido: 'correo-no-valido'. | Causa: None
+2026-11-25 15:12:00,350 | INFO | Servicio registrado: Sala [S-01] Sala Ejecutiva A (Cap. 12 pers.) | Tarifa: $80,000.00 | Disponible
+2026-11-25 15:12:00,350 | INFO | Op 3 exitosa -> S-01 creada
+2026-11-25 15:12:00,351 | INFO | Servicio registrado: Equipo [S-02] Proyector 4K (Stock: 5) | Tarifa: $35,000.00 | Disponible
+2026-11-25 15:12:00,351 | INFO | Op 4 exitosa -> S-02 creada
+2026-11-25 15:12:00,352 | INFO | Servicio registrado: Asesoría [S-03] Arquitectura Cloud (AWS y Microservicios) | Tarifa: $120,000.00 | Disponible
+2026-11-25 15:12:00,352 | INFO | Op 5 exitosa -> S-03 creada
+2026-11-25 15:12:00,353 | ERROR | Op 6 fallida (ErrorValidacionDato): La tarifa base debe ser un número mayor que cero. | Causa: None
+2026-11-25 15:12:00,353 | ERROR | Op 7 fallida (ErrorCalculoCosto): No se puede prorratear un costo entre cero. | Causa: division by zero
+2026-11-25 15:12:00,353 | INFO | Reserva creada: Reserva [R-01] | Cliente: Laura Gómez | Servicio: Sala Ejecutiva A | Total: $240,000.00 | Estado: confirmada
+2026-11-25 15:12:00,354 | INFO | Op 8 exitosa -> <reservas.Reserva object at 0x000001CBD15B6120>
+2026-11-25 15:12:00,354 | ERROR | Op 9 fallida (ErrorValidacionDato): Cliente con ID 'C-99' no encontrado. | Causa: None
+2026-11-25 15:12:00,355 | INFO | Reserva cancelada: Reserva [R-01] | Cliente: Laura Gómez | Servicio: Sala Ejecutiva A | Total: $240,000.00 | Estado: cancelada
+2026-11-25 15:12:00,355 | INFO | Op 10 exitosa -> R-01 cancelada
+2026-11-25 15:33:33,702 | INFO | Cliente registrado: Cliente [C-01] Laura Gómez | laura@empresa.com | Tel: 3105551234
+2026-11-25 15:33:33,703 | INFO | Op 1 exitosa -> C-01 registrada
+2026-11-25 15:33:33,704 | ERROR | Op 2 fallida (ErrorValidacionDato): Correo electrónico inválido: 'correo-no-valido'. | Causa: None
+2026-11-25 15:33:33,704 | INFO | Servicio registrado: Sala [S-01] Sala Ejecutiva A (Cap. 12 pers.) | Tarifa: $80,000.00 | Disponible
+2026-11-25 15:33:33,704 | INFO | Op 3 exitosa -> S-01 creada
+2026-11-25 15:33:33,705 | INFO | Servicio registrado: Equipo [S-02] Proyector 4K (Stock: 5) | Tarifa: $35,000.00 | Disponible
+2026-11-25 15:33:33,705 | INFO | Op 4 exitosa -> S-02 creada
+2026-11-25 15:33:33,706 | INFO | Servicio registrado: Asesoría [S-03] Arquitectura Cloud (AWS y Microservicios) | Tarifa: $120,000.00 | Disponible
+2026-11-25 15:33:33,706 | INFO | Op 5 exitosa -> S-03 creada
+2026-11-25 15:33:33,707 | ERROR | Op 6 fallida (ErrorValidacionDato): La tarifa base debe ser un número mayor que cero. | Causa: None
+2026-11-25 15:33:33,707 | ERROR | Op 7 fallida (ErrorCalculoCosto): No se puede prorratear un costo entre cero. | Causa: division by zero
+2026-11-25 15:33:33,708 | INFO | Reserva creada: Reserva [R-01] | Cliente: Laura Gómez | Servicio: Sala Ejecutiva A | Total: $240,000.00 | Estado: confirmada
+2026-11-25 15:33:33,708 | INFO | Op 8 exitosa -> <reservas.Reserva object at 0x000001DEAA516120>
+2026-11-25 15:33:33,708 | ERROR | Op 9 fallida (ErrorValidacionDato): Cliente con ID 'C-99' no encontrado. | Causa: None
+2026-11-25 15:33:33,709 | INFO | Reserva cancelada: Reserva [R-01] | Cliente: Laura Gómez | Servicio: Sala Ejecutiva A | Total: $240,000.00 | Estado: cancelada
+2026-11-25 15:33:33,709 | INFO | Op 10 exitosa -> R-01 cancelada
+2026-11-25 15:33:33,709 | ERROR | Reintento en Op 10 fallido (ErrorOperacionNoPermitida): La reserva 'R-01' ya está cancelada.
